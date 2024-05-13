@@ -12,39 +12,44 @@
         android:id="@+id/tvSimpegHome"
         android:layout_width="103dp"
         android:layout_height="50dp"
+        android:layout_marginTop="16dp"
         android:text="SIMPEG"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.167" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btDataKehadiran"
         android:layout_width="125dp"
         android:layout_height="70dp"
-        android:text="Data Kehadiran"
+        android:layout_marginStart="32dp"
         android:backgroundTint="@color/white"
+        android:text="Data Kehadiran"
         android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSimpegHome" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316" />
+        app:layout_constraintTop_toBottomOf="@+id/btDataPegawai" />
 
     <Button
         android:id="@+id/btDataPegawai"
         android:layout_width="125dp"
         android:layout_height="71dp"
-        android:text="Data Pegawai"
         android:backgroundTint="@color/white"
+        android:text="Data Pegawai"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/btDataKehadiran"
-        app:layout_constraintStart_toStartOf="@+id/btDataKehadiran"
-        app:layout_constraintTop_toBottomOf="@+id/btDataKehadiran" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btDataKehadiran"
+        app:layout_constraintTop_toBottomOf="@+id/tvSimpegHome" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

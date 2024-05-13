@@ -22,16 +22,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         this.btDataPegawai = this.findViewById(R.id.btDataPegawai);
         this.btDataPegawai.setOnClickListener(this);
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, new DataKehadiranFragment())
+                .commit();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, new DataPegawaiFragment())
+                .commit();
     }
 
     @Override
     public void onClick(View view) {
         if(view.getId() == R.id.btDataKehadiran){
-            Intent i = new Intent(this, DataKehadiran.class);
-            startActivity(i);
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new DataKehadiranFragment())
+                    .commit();
         } else if (view.getId() == R.id.btDataPegawai) {
-            Intent i = new Intent(this, DataPegawai.class);
-            startActivity(i);
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new DataPegawaiFragment())
+                    .commit();
         }
     }
 
