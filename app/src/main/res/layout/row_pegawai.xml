@@ -18,12 +18,13 @@
 
     <TextView
         android:id="@+id/tvNamaPegawai"
-        android:layout_width="231dp"
-        android:layout_height="28dp"
+        android:layout_width="212dp"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:text="Nama"
+        android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/ivFotoPegawai"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,30 +32,33 @@
 
     <TextView
         android:id="@+id/tvGender"
-        android:layout_width="231dp"
-        android:layout_height="28dp"
+        android:layout_width="212dp"
+        android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:text="Gender"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/tvNamaPegawai"
         app:layout_constraintStart_toStartOf="@+id/tvNamaPegawai"
         app:layout_constraintTop_toBottomOf="@+id/tvNamaPegawai" />
 
     <TextView
         android:id="@+id/tvJabatan"
-        android:layout_width="231dp"
-        android:layout_height="28dp"
+        android:layout_width="212dp"
+        android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:text="Jabatan"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/tvGender"
         app:layout_constraintStart_toStartOf="@+id/tvGender"
         app:layout_constraintTop_toBottomOf="@+id/tvGender" />
 
     <TextView
         android:id="@+id/tvKTP"
-        android:layout_width="231dp"
-        android:layout_height="28dp"
+        android:layout_width="212dp"
+        android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:text="KTP"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/tvJabatan"
         app:layout_constraintStart_toStartOf="@+id/tvJabatan"
         app:layout_constraintTop_toBottomOf="@+id/tvJabatan" />
@@ -67,6 +71,7 @@
         android:layout_marginBottom="8dp"
         android:backgroundTint="#FFFFFF"
         android:text="Delete"
+        android:textAlignment="center"
         android:textColor="#2196F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/ivFotoPegawai"
