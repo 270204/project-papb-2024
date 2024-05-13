@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class AbsensiAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
-
     private final Context context;
     private final List<Absensi> absensiList;
 

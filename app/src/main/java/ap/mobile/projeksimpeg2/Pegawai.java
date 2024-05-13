@@ -1,7 +1,6 @@
 package ap.mobile.projeksimpeg2;
 
 public class Pegawai {
-
     public String namaPegawai;
     public String gender;
     public int fotoId;

@@ -1,5 +1,4 @@
 package ap.mobile.projeksimpeg2;
-
 public class Absensi {
     public String nama;
     public String tanggal;
