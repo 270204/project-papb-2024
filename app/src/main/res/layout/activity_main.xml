@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34a1eb"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSimpegHome"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:text="SIMPEG"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <Button
+        android:id="@+id/btDataKehadiran"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:text="Data Kehadiran"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <Button
+        android:id="@+id/btDataPegawai"
+        android:layout_width="125dp"
+        android:layout_height="71dp"
+        android:text="Data Pegawai"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btDataKehadiran"
+        app:layout_constraintStart_toStartOf="@+id/btDataKehadiran"
+        app:layout_constraintTop_toBottomOf="@+id/btDataKehadiran" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
